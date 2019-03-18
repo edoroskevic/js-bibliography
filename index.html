@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang='en'>
+	<head>
+		<meta charset='utf-8'>
+		<meta name='viewpoint' content='width=device-width, initial-scale=1'>
+		
+		<title>project-04</title>
+		
+        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.13/css/all.css'>
+		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css'>
+
+		<style>
+			label{ text-align: left; }
+			a{ text-decoration: none; } 
+			#id{ display: none; }
+			.container { width: 40% !important; } 
+			.success{ background-color: green; }
+			.failure{ background-color: red; }
+			.container, th, td { text-align: center; }
+			.success, .failure { color: white; opacty: 0.5; }
+		</style>
+	</head>
+	<body>
+		<div class='container'>
+			<h1>ADD BOOK</h1>
+			<p id='message'></p>	
+			<form id='book-form'>
+				<div>
+					<label for='title'>Title</title>
+					<input class='u-full-width' id='title' type='text'>
+				</div>
+				<div>
+					<label for='author'>Author</title>
+					<input class='u-full-width' id='author' type='text'>
+				</div>
+				<div>
+					<label for='isbn'>ISBN</title>
+					<input class='u-full-width' id='isbn' type='text'>
+				</div>
+				<button class='button u-full-width'>Submit</button>		
+			</form>
+			<hr>
+			<table class='u-full-width'>
+				<thead>
+					<tr>
+						<th>Index</th>
+						<th>Title</th>
+						<th>Author</th>
+						<th>ISBN</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody id='book-list'>
+					
+				</tbody>
+			</table>
+			<button class='button u-full-width' id='erase'>clear</button>
+		</div>	
+		
+		<script src='app.js'></script>
+	</body>
+</html>
